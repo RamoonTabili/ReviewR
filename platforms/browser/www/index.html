@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name= "viewport" content= "width=device-width">
+    <title>ReviewR</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="mobile-web-app-capable" content="yes">
+    <!-- Include the compiled Ratchet CSS -->
+    <link href="css/ratchet.min.css" rel="stylesheet" />
+    <!-- your OWN CSS file comes last -->
+    <link href="css/main.css" rel="stylesheet" />
+</head>
+<body>
+    
+    <header class="bar bar-nav">
+        <h1>ReviewR</h1>
+    </header>
+    
+    <div class="content" id="whatthehell">
+        <ul class="table-view" id="list"></ul>
+      <a class="special addPeep btn-block">Add Review</a>
+    </div>
+    
+    <div id="reviewSelect" class="modal">
+        <header class="bar bar-nav">
+            <a class="icon icon-close pull-right personCancel"></a>
+            <h1 class="modalHeader">Review</h1>
+        </header>
+        <div>
+            <img class="reviewView" src="img/PhotoButton.svg" alt="Review picture here.">
+            <div class="stars">
+              <span class="star2">&nbsp;</span>
+              <span class="star2">&nbsp;</span>
+              <span class="star2">&nbsp;</span>
+              <span class="star2">&nbsp;</span>
+              <span class="star2">&nbsp;</span>
+            </div>
+            <button class="btn btn-negative btn-block reviewDelete">
+                <span class="icon icon-trash"> Delete Review</span>
+            </button>
+        </div>
+    </div>
+    
+    <div id="reviewAdd" class="modal">
+        <header class="bar bar-nav">
+            <a class="icon icon-close pull-right personCancel"></a>
+            <h1 class="modalHeader">Add Review</h1>
+        </header>
+        <div class="content">
+            <div class="content-padded">
+               
+                <div class="picture">
+                    <img src="img/PhotoButton.svg" id="myImage" class="herePic">
+                        <span class="icon icon-right">Take a Pic!</span>
+                    </img>
+                </div>
+               
+                <form class="input-group">
+                    <div class="input">
+<!--                        <label>Title</label>-->
+                        <input id="title" type="text" placeholder="Title">
+                    </div>
+<!--                        <label>Rating</label>-->
+                        <div class="stars">
+                          <span class="star">&nbsp;</span>
+                          <span class="star">&nbsp;</span>
+                          <span class="star">&nbsp;</span>
+                          <span class="star">&nbsp;</span>
+                          <span class="star">&nbsp;</span>
+                        </div>
+                </form>
+                
+                <p class="content-padded">
+                    <button class="btn btn-negative btn-block btn-outlined personCancel">
+                        <span class="icon icon-close"> Cancel</span>
+                    </button>
+                    <button class="btn btn-positive btn-block personSave">
+                        <span class="icon icon-check"> Save</span>
+                    </button>
+                </p>
+                
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <time datetime="2017"></time>
+    </footer>
+    <script src="js/ratchet.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="cordova.js"></script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+body { /* #00DCFF #0064FF #008CFF */
+    max-width: 100%;
+    font-family: "Helvetica", "Arial", sans-serif;
+    color: #428BCA;
+    overflow: hidden;
+}
+h1 {
+    text-align: center;
+    font-size: 24px;
+    margin: 10px auto;
+    background: -webkit-linear-gradient(-45deg, #744FCA, #428BCA);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+}
+h2{
+    font-size: 20px;
+    width: 50%;
+    display: block;
+    float: left;
+    margin-left: 10px;
+}
+a.special{
+    text-align: center;
+    width: 90%;
+    margin: 10px auto;
+    border-radius: 5px;
+    color: white;
+    background: -webkit-linear-gradient(-45deg, #744FCA, #428BCA);
+}
+.reviewDelete {
+    text-align: center;
+    width: 90%;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+::-webkit-input-placeholder {
+   text-align: center;
+}
+#title {
+    text-align: center;
+    width: 100%;
+}
+.icon-right {
+    color: white;
+    position: absolute;
+    text-align: center;
+    top: 25%;
+    width: 100%;
+    margin: 0 auto;
+}
+.herePic{
+    border-radius: 15px;
+    display: block;
+/*    text-align: center;*/
+    margin: 10px auto;
+    width: 250px;
+    height: 250px;
+    background: url(img/PhotoButton.svg);
+}
+.bar.bar-nav {
+    box-shadow: 0px 5px 80px -15px rgba(0,0,0,0.75);
+}
+
+img.reviewView {
+    border-radius: 15px;
+    display: block;
+    margin: 75px auto 30px auto;
+    width: 300px;
+    height: 300px;
+}
+img.reviewList {
+    display: block;
+    float: left;
+    width: 75px;
+    height: 75px;
+}
+.out-of-five{
+    display: block;
+    width: 50%;
+    float: left;
+    margin-left: 10px;
+}
+.stars {
+    display: block;
+    margin: 10px 0px 0px 5%;
+    height: 50px;
+    width: 100%;
+}
+.star{
+    position: relative;
+    display: block;
+    float: left;
+    width: 20%;
+    font-size: 30px;
+}
+.star2{
+    position: relative;
+    display: block;
+    float: left;
+    width: 20%;
+    font-size: 30px;
+}
+.star::before{
+    content: '\2606';
+    cursor: pointer;
+}
+.star.rated::before{
+    content: '\2605' !important;
+}
+.star2::before{
+    content: '\2606';
+    cursor: pointer;
+}
+.star2.rated::before{
+    content: '\2605' !important;
+}
+
+.rated-star::before{
+    content: '\2606';
+    cursor: pointer;
+}
+.rated-star.rated::before{
+    content: '\2605' !important;
+
+}
