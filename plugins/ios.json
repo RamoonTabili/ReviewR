@@ -7,15 +7,15 @@
         "files": {}
     },
     "installed_plugins": {
+        "cordova-custom-config": {
+            "PACKAGE_NAME": "ca.edumedia.tabi0011"
+        },
         "cordova-plugin-camera": {
             "CAMERA_USAGE_DESCRIPTION": " ",
             "PHOTOLIBRARY_USAGE_DESCRIPTION": " ",
             "PACKAGE_NAME": "ca.edumedia.tabi0011"
         },
         "cordova-plugin-whitelist": {
-            "PACKAGE_NAME": "ca.edumedia.tabi0011"
-        },
-        "cordova-custom-config": {
             "PACKAGE_NAME": "ca.edumedia.tabi0011"
         }
     },
